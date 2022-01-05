@@ -7,6 +7,8 @@ import TabsCard from "../components/home/info";
 import AppServices from "../components/home/sevices";
 import AppExpert from "../components/home/expert-doctors";
 import AppReview from "../components/home/reviews";
+import AppFaq from "../components/home/faq";
+import Demo from "../components/home/appointment";
 import AppFooter from "../components/common/footer";
 import { Divider } from "antd";
 
@@ -25,6 +27,9 @@ function AppHome()  {
          <AppExpert/>
          <Divider/>
          <AppReview/>
+         <AppFaq/>
+         <Divider/>
+         <Demo/>
          <AppFooter/>
      </div>
 

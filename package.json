@@ -42,5 +42,13 @@
   "description": "Hospital care frontend",
   "main": "index.js",
   "author": "Suman Maji",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://shreyasarkar@bitbucket.org/sherspect/frontend.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/sherspect/frontend/issues"
+  }
 }
