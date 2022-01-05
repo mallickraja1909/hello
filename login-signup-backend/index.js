@@ -39,7 +39,7 @@ app.post("/login", (req, res)=> {
     })
 }) 
 
-app.post("/register", (req, res)=> {
+app.put("/register", (req, res)=> {
     const { name, email,phoneno, password} = req.body
     User.findOne({email: email}, (err, user) => {
         if(user){

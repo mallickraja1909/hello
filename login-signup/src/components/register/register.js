@@ -7,7 +7,7 @@ const Register = () => {
 
     const history = useHistory()
 
-    const [ admin, setadmin] = useState({
+    const [ user, setUser] = useState({
         name: "",
         email:"",
         phoneno:"",
@@ -17,16 +17,16 @@ const Register = () => {
 
     const handleChange = e => {
         const { name, value } = e.target
-        setadmin({
-            ...admin,
+        setUser({
+            ...user,
             [name]: value
         })
     }
 
     const register = () => {
-        const { name, email,phoneno, password, reEnterPassword } = admin
+        const { name, email,phoneno, password, reEnterPassword } = user
         if( name && email && phoneno && password && (password === reEnterPassword)){
-            axios.post("http://localhost:9002/register", admin)
+            axios.put("http://localhost:9002/register", user)
             .then( res => {
                 alert(res.data.message)
                 history.push("/login")
@@ -39,13 +39,13 @@ const Register = () => {
 
     return (
         <div className="register">
-            {console.log("admin", admin)}
+            {console.log("user", user)}
             <h1>Register</h1>
-            <input type="text" name="name" value={admin.name} placeholder="Your Name" onChange={ handleChange }></input>
-            <input type="text" name="email" value={admin.email} placeholder="Your Email" onChange={ handleChange }></input>
-            <input type="text" name="phoneno" value={admin.phoneno} placeholder="Your Moile No" onChange={ handleChange }></input>
-            <input type="password" name="password" value={admin.password} placeholder="Your Password" onChange={ handleChange }></input>
-            <input type="password" name="reEnterPassword" value={admin.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
+            <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={ handleChange }></input>
+            <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={ handleChange }></input>
+            <input type="text" name="phoneno" value={user.phoneno} placeholder="Your Moile No" onChange={ handleChange }></input>
+            <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={ handleChange }></input>
+            <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
             <div className="button" onClick={register} >Register</div>
             <div>or</div>
             <div className="button" onClick={() => history.push("/login")}>Login</div>

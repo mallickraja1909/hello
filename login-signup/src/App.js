@@ -7,18 +7,18 @@ import { useState } from 'react';
 
 function App() {
 
-  const [ admin, setLoginadmin] = useState({})
+  const [ user, setLoginUser] = useState({})
   return (
     <div className="App">
       <Router>
         <Switch>
           <Route exact path="/">
             {
-              admin && admin._id ? <Homepage setLoginadmin={setLoginadmin} /> : <Login setLoginadmin={setLoginadmin}/>
+              user && user._id ? <Homepage setLoginUser={setLoginUser} /> : <Login setLoginUser={setLoginUser}/>
             }
           </Route>
           <Route path="/login">
-            <Login setLoginadmin={setLoginadmin}/>
+            <Login setLoginUser={setLoginUser}/>
           </Route>
           <Route path="/register">
             <Register />
