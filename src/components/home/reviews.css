@@ -1,0 +1,9 @@
+.Appreview {
+    background-image: url('../../assets/images/bgimage.jpg');
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding: 200px;
+    margin: 40px;
+  }
+

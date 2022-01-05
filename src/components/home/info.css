@@ -1,0 +1,43 @@
+.img-one {
+  background-image: url('../../assets/images/one.jpg');
+  vertical-align:middle;
+  max-width: 30%;
+  height: 400px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.img-two {
+  background-image: url('../../assets/images/two.jpg');
+  vertical-align:middle;
+  max-width: 30%;
+  height: 400px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.img-three{
+  background-image: url('../../assets/images/three.jpg');
+  vertical-align:middle;
+  max-width: 30%;
+  height: 400px;
+  border-radius: 10px;
+  box-sizing: border-box;
+     
+}
+.img-four{
+  background-image: url('../../assets/images/four.jpg');
+  vertical-align:middle;
+  max-width: 30%;
+  height: 400px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+.img-five{
+  background-image: url('../../assets/images/five.jpg');
+  vertical-align:middle;
+  max-width: 30%;
+  height: 400px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
