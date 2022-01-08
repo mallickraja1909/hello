@@ -35,12 +35,12 @@ function AppFooter() {
       <Col span={8}>
         <h1><strong>RECENT POSTS</strong></h1>
         <Meta
-      avatar={<img src={logo6} alt="Hospital Care" width="80" height="90"></img>}
+      avatar={<img src={logo6} alt="Hospital Care" width="70" height="70"></img>}
       title="A lesson adip isicing"
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem."
         />
         <Meta
-      avatar={<img src={logo6} alt="Hospital Care" width="80" height="90"></img>}
+      avatar={<img src={logo6} alt="Hospital Care" width="70" height="70"></img>}
       title="How to make an event"
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem."
         />
@@ -49,7 +49,7 @@ function AppFooter() {
     </div>
 
                 </Footer>
-                <Footer style={{ textAlign: 'left' }}>HOSPITAL CARE ©2022</Footer>
+                <Footer style={{ textAlign: 'center' }}>COPYRIGHT HOSPITALCARE ©2022</Footer>
         </Layout>
     );
 }
