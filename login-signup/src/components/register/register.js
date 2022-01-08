@@ -42,8 +42,8 @@ const Register = () => {
             {console.log("user", user)}
             <h1>Register</h1>
             <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={ handleChange }></input>
-            <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={ handleChange }></input>
-            <input type="text" name="phoneno" value={user.phoneno} placeholder="Your Moile No" onChange={ handleChange }></input>
+            <input type="email" name="email" value={user.email} placeholder="Your Email" onChange={ handleChange }></input>
+            <input type="number" name="phoneno" value={user.phoneno} placeholder="Your Mobile No" onChange={ handleChange }></input>
             <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={ handleChange }></input>
             <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
             <div className="button" onClick={register} >Register</div>
@@ -53,4 +53,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Register;
