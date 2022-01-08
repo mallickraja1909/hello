@@ -1,5 +1,5 @@
-.site-layout-content {
-    min-height: 280px;
+ .site-layout-content {
+    min-height: 200px;
     padding: 24px;
   }
   #components-layout-demo-top .logo {
@@ -12,7 +12,10 @@
     float: right;
     margin: 16px 0 16px 24px;
   }
-  .ant-layout-footer {
-    color: rgb(247 240 240 / 85%);
-    background: #084eb6;
-}
+
+   .ant-layout-footer {
+     color: rgb(247 240 240 / 85%); 
+     color: rgba(13, 17, 245, 0.85);
+    /* background: #084eb6; */
+    background: rgb(240, 238, 164);
+} 

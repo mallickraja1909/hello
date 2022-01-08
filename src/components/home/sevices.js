@@ -28,11 +28,11 @@ export default function AppServices() {
     <div className="container-fluid">
       <div className="titleHolder">
         <h1>Provided Services</h1>
-        <p>
+        {/* <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum
           dolor sit amet. qui suscipit atque fugiat officia corporis rerum eaque
           neque totam animi, sapiente culpa. Architecto!
-        </p>
+        </p> */}
       </div>
       <div className="site-card-wrapper">
         <Slider {...settings}>

@@ -1,9 +1,14 @@
 .Appreview {
-    background-image: url('../../assets/images/bgimage.jpg');
-    background-size: cover;
+    background-image: url('../../assets/images/img-1.jpg');
+    /* background-size:cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:contain;
     text-align: center;
     position: relative;
     padding: 200px;
-    margin: 40px;
+    margin: 50px;
   }
 
+  
